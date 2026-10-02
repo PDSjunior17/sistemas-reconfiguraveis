@@ -1,0 +1,31 @@
+# VHDL Tutorial Folder
+
+This directory contains a structured tutorial for learning VHDL (VHSIC Hardware Description Language).
+
+## Contents
+
+- `README.md` - This file
+- `01_introduction.md` - Introduction to VHDL
+- `02_basic_syntax.md` - Basic VHDL syntax and structure
+- `03_combinational_logic.md` - Combinational logic examples
+- `04_sequential_logic.md` - Sequential logic examples
+- `05_counters.md` - Counter designs
+- `06_state_machines.md` - Finite State Machine examples
+- `07_testbenches.md` - Writing testbenches for simulation
+- `08_best_practices.md` - Best practices and common pitfalls
+- `examples/` - Directory containing VHDL example files
+
+## How to Use
+
+1. Start with `01_introduction.md` to understand what VHDL is
+2. Progress through the numbered files in order
+3. Examine the example VHDL files in the `examples/` directory
+4. Try modifying and simulating the examples using your preferred VHDL simulator (e.g., GHDL, ModelSim, Vivado)
+
+## Prerequisites
+
+- Basic understanding of digital logic circuits
+- Familiarity with programming concepts (helpful but not required)
+- A VHDL simulator installed (optional for following along)
+
+Happy learning!
