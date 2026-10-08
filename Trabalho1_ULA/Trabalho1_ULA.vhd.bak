@@ -1,0 +1,140 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY Trabalho1_ULA IS
+	PORT(
+		entrada1, entrada2: IN STD_LOGIC_VECTOR(7 DOWNTO 8);
+		carry: IN BIT;
+		operacao: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		saida: OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+		flags: OUT STD_LOGIC_VECTOR(4 DOWNTO 0)
+	);
+END ENTITY;
+
+ARCHITECTURE ula OF Trabalho1_ULA IS
+	SIGNAL resultado: STD_LOGIC_VECTOR(7 downto 0);
+	SIGNAL pass_b: STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL op_or: STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL op_xor: STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL op_and: STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL op_addc: STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL op_add: STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL op_subc: STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL op_sub: STD_LOGIC_VECTOR(7 DOWNTO 0);
+	--flags
+	SIGNAL carry_flag, halfcarry_flag, overflow_flag: STD_LOGIC;
+	--auxiliares para a operação de soma com carry
+	SIGNAL aux_somac_1: STD_LOGIC_VECTOR(8 DOWNTO 0);
+	SIGNAL aux_somac_2: STD_LOGIC_VECTOR(4 DOWNTO 0);
+	SIGNAL aux_carry_1: STD_LOGIC_VECTOR(8 DOWNTO 0);
+	SIGNAL aux_carry_2: STD_LOGIC_VECTOR(4 DOWNTO 0);
+	SIGNAL carry_flag_addc, halfcarry_flag_addc, overflow_flag_addc: STD_LOGIC;
+	--auxiliares para a operação de soma sem carry
+	SIGNAL aux_soma_1: STD_LOGIC_VECTOR(8 DOWNTO 0);
+	SIGNAL aux_soma_2: STD_LOGIC_VECTOR(4 DOWNTO 0);
+	SIGNAL carry_flag_add, halfcarry_flag_add, overflow_flag_add: STD_LOGIC;
+	--auxiliares para a operação de subtração com carry
+	SIGNAL aux_subc_1: STD_LOGIC_VECTOR(8 DOWNTO 0);
+	SIGNAL aux_subc_2: STD_LOGIC_VECTOR(4 DOWNTO 0);
+	--como a operação de add com carry ja tem auxiliares para o carry, podemos reaproveitar
+	SIGNAL carry_flag_subc, halfcarry_flag_subc, overflow_flag_subc: STD_LOGIC;
+	--auxiliares para a operação de subtração sem carry
+	SIGNAL aux_sub_1: STD_LOGIC_VECTOR(8 DOWNTO 0);
+	SIGNAL aux_sub_2: STD_LOGIC_VECTOR(4 DOWNTO 0);
+	SIGNAL carry_flag_sub, halfcarry_flag_sub, overflow_flag_sub: STD_LOGIC;
+
+BEGIN
+
+	--primeira operação 0000 entrada de B vai para a saida
+	pass_b <= entrada2;
+	
+	--segunda operação 0001 a saida é A or B
+	op_or <= entrada1 OR entrada2;
+	
+	--terceira operação 0010 a saida é A xor B
+	op_xor <= entrada1 XOR entrada2;
+	
+	--quarta operação 0011 a saida é A and B
+	op_and <= entrada1 AND entrada2;
+	
+	--quinta operação 0100 a saida é A+B+carry 
+	--primeiramente precisamos estender o tamanho do sinal de carry para podermos somar
+	aux_carry_1 <= "00000000" & carry;
+	aux_carry_2 <= "0000" & carry;
+	aux_somac_1 <= STD_LOGIC_VECTOR(UNSIGNED(entrada1)+UNSIGNED(entrada2)+UNSIGNED(aux_carry_1));
+	aux_somac_2 <= STD_LOGIC_VECTOR(UNSIGNED(entrada1(3 DOWNTO 0)+UNSIGNED(entrada2(3 DOWNTO 0))+UNSIGNED(aux_carry_2));
+	op_addc <= aux_somac_1(7 DOWNTO 0);
+	carry_flag_addc <= aux_somac_1(8);
+	halfcarry_flag_addc <= aux_somac_2(4);
+	overflow_flag_addc <= (entrada1(7) and entrada2(7) and not op_addc(7)) or (not entrada1(7) and not entrada2(7) and op_addc(7));
+	--fim soma com carry
+
+	--soma sem carry
+	aux_soma_1 <= STD_LOGIC_VECTOR(UNSIGNED(entrada1)+UNSIGNED(entrada2));
+	aux_soma_2 <= STD_LOGIC_VECTOR(UNSIGNED(entrada1(3 DOWNTO 0)+UNSIGNED(entrada2(3 DOWNTO 0));
+	op_add <= aux_soma_1(7 DOWNTO 0);
+	carry_flag_add <= aux_soma_1(8);
+	halfcarry_flag_add <= aux_soma_2(4);
+	overflow_flag_add <= (entrada1(7) and entrada2(7) and not op_add(7)) or (not entrada1(7) and not entrada2(7) and op_add(7));
+	--fim soma sem carry
+	
+	--subtração com carry
+	aux_subc_1 <= STD_LOGIC_VECTOR(UNSIGNED(entrada1)-UNSIGNED(entrada2)-UNSIGNED(aux_carry_1));
+	aux_subc_2 <= STD_LOGIC_VECTOR(UNSIGNED(entrada1(3 DOWNTO 0)-UNSIGNED(entrada2(3 DOWNTO 0))-UNSIGNED(aux_carry_2));
+	op_subc <= aux_subc_1(7 DOWNTO 0);
+	carry_flag_subc <= aux_subc_1(8);
+	halfcarry_flag_subc <= aux_subc_2(4);
+	overflow_flag_subc <= (entrada1(7) and not entrada2(7) and not op_addc(7)) or (not entrada1(7) and 	entrada2(7) and op_addc(7));
+	--fim subtração com carry
+	
+	--subtração sem carry
+	aux_sub_1 <= STD_LOGIC_VECTOR(UNSIGNED(entrada1)-UNSIGNED(entrada2));
+	aux_sub_2 <= STD_LOGIC_VECTOR(UNSIGNED(entrada1(3 DOWNTO 0)-UNSIGNED(entrada2(3 DOWNTO 0)));
+	op_sub <= aux_sub_1(7 DOWNTO 0);
+	carry_flag_sub <= aux_sub_1(8);
+	halfcarry_flag_sub <= aux_sub_2(4);
+	overflow_flag_sub <= (entrada1(7) and not entrada2(7) and not op_addc(7)) or (not entrada1(7) and entrada2(7) and op_addc(7));
+	--fim subtração sem carry
+	
+	WITH operacao SELECT
+		resultado <= pass_b WHEN "0000",
+					 op_or WHEN "0001",
+					 op_xor WHEN "0010",
+					 op_and WHEN "0011",
+					 op_addc WHEN "0100",
+					 op_add WHEN "0101",
+					 op_subc WHEN "0110",
+					 op_suc WHEN "0111",
+					 "00000000" WHEN OTHERS;
+	
+	WITH operacao SELECT
+		carry_flag <= carry_flag_addc WHEN "0100",
+					  carry_flag_add WHEN "0101",
+					  carry_flag_subc WHEN "0110",
+					  carry_flag_sub WHEN "0111",
+					  '0' WHEN OTHERS;
+		
+	WITH operacao SELECT
+		halfcarry_flag <= halfcarry_flag_addc WHEN "0100",
+						  halfcarry_flag_add WHEN "0101",
+						  halfcarry_flag_subc WHEN "0110",
+						  halfcarry_flag_sub WHEN "0111",
+						  '0' WHEN OTHERS;
+		
+	WITH operacao SELECT
+		overflow_flag <= overflow_flag_addc WHEN "0100",
+						 overflow_flag_add WHEN "0101",
+						 overflow_flag_subc WHEN "0110",
+						 overflow_flag_sub WHEN "0111",
+						 '0' WHEN OTHERS;
+						 
+	saida <= resultado;
+	
+	flags(0) <= resultado(7);
+	flags(1) <= overflow_flag;
+	flags(2) <= '1' WHEN "00000000" ELSE '0';
+	flags(3) <= halfcary_flag;
+	flags(4) <= carry_flag;
+
+END ula;
