@@ -1,0 +1,28 @@
+|Trabalho2_RegStatus
+nrst => registradores[0].ACLR
+nrst => registradores[1].ACLR
+nrst => registradores[2].ACLR
+nrst => registradores[3].ACLR
+nrst => registradores[4].ACLR
+clk_in => registradores[0].CLK
+clk_in => registradores[1].CLK
+clk_in => registradores[2].CLK
+clk_in => registradores[3].CLK
+clk_in => registradores[4].CLK
+status_reg_in[0] => registradores[0].DATAIN
+status_reg_in[1] => registradores[1].DATAIN
+status_reg_in[2] => registradores[2].DATAIN
+status_reg_in[3] => registradores[3].DATAIN
+status_reg_in[4] => registradores[4].DATAIN
+status_reg_wr_ena[0] => registradores[0].ENA
+status_reg_wr_ena[1] => registradores[1].ENA
+status_reg_wr_ena[2] => registradores[2].ENA
+status_reg_wr_ena[3] => registradores[3].ENA
+status_reg_wr_ena[4] => registradores[4].ENA
+status_reg_out[0] <= registradores[0].DB_MAX_OUTPUT_PORT_TYPE
+status_reg_out[1] <= registradores[1].DB_MAX_OUTPUT_PORT_TYPE
+status_reg_out[2] <= registradores[2].DB_MAX_OUTPUT_PORT_TYPE
+status_reg_out[3] <= registradores[3].DB_MAX_OUTPUT_PORT_TYPE
+status_reg_out[4] <= registradores[4].DB_MAX_OUTPUT_PORT_TYPE
+
+

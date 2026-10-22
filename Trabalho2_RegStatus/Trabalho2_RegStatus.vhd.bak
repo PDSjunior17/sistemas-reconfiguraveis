@@ -1,0 +1,33 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY Trabalho2_RegStatus IS
+	PORT(
+		nrst : IN STD_LOGIC; -- Entrada de reset assíncrono
+		clk_in : IN STD_LOGIC; -- Entrada de clock para escrita no registrador
+		status_reg_in : IN STD_LOGIC_VECTOR (4 DOWNTO 0); -- Entrada de dado para escrita nos registradores [0]=RN [1]=RV [2]=RZ [3]=RH [4]=RC
+		status_reg_wr_ena : IN STD_LOGIC_VECTOR (4 DOWNTO 0); -- Entrada de habilitação para escrita registradores
+		status_reg_out : OUT STD_LOGIC_VECTOR (4 DOWNTO 0) -- Saída dos registradores RN, RV, RZ, RH e RC
+	);
+END ENTITY Trabalho2_RegStatus; 
+
+ARCHITECTURE Reg_Status OF Trabalho2_RegStatus IS
+	SIGNAL registradores: STD_LOGIC_VECTOR (4 DOWNTO 0); -- Vetor que faz o papel dos registradores, [0]=RN [1]=RV [2]=RZ [3]=RH [4]=RC
+BEGIN
+	Reg_Status : PROCESS(nrst, clk_in)
+	BEGIN
+		IF nrst = '0' THEN
+			registradores <= (OTHERS => '0');
+		ELSIF RISING_EDGE (clk_in) THEN 
+			FOR i IN 0 to 4 LOOP
+				IF status_reg_wr_ena(i) = '1' THEN
+					registradores(i) <= status_reg_in(i);
+				END IF;
+			END LOOP;
+		END IF;
+	END PROCESS Reg_Status;
+	
+	status_reg_out <= registradores
+			
+END ARCHITECTURE Reg_Status;
