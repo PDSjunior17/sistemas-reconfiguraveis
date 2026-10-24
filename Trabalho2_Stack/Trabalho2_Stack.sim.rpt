@@ -1,0 +1,615 @@
+Simulator report for Trabalho2_Stack
+Fri Oct 23 19:34:37 2026
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 2.8 us       ;
+; Simulation Netlist Size     ; 290 nodes    ;
+; Simulation Coverage         ;      44.14 % ;
+; Total Number of Transitions ; 770          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      44.14 % ;
+; Total nodes checked                                 ; 290          ;
+; Total output ports checked                          ; 290          ;
+; Total output ports with complete 1/0-value coverage ; 128          ;
+; Total output ports with no 1/0-value coverage       ; 162          ;
+; Total output ports with no 1-value coverage         ; 162          ;
+; Total output ports with no 0-value coverage         ; 162          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                        ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |Trabalho2_Stack|pilha~0       ; |Trabalho2_Stack|pilha~0       ; out              ;
+; |Trabalho2_Stack|pilha~1       ; |Trabalho2_Stack|pilha~1       ; out              ;
+; |Trabalho2_Stack|pilha~2       ; |Trabalho2_Stack|pilha~2       ; out              ;
+; |Trabalho2_Stack|pilha~3       ; |Trabalho2_Stack|pilha~3       ; out              ;
+; |Trabalho2_Stack|pilha~4       ; |Trabalho2_Stack|pilha~4       ; out              ;
+; |Trabalho2_Stack|pilha~5       ; |Trabalho2_Stack|pilha~5       ; out              ;
+; |Trabalho2_Stack|pilha~6       ; |Trabalho2_Stack|pilha~6       ; out              ;
+; |Trabalho2_Stack|pilha~7       ; |Trabalho2_Stack|pilha~7       ; out              ;
+; |Trabalho2_Stack|pilha~8       ; |Trabalho2_Stack|pilha~8       ; out              ;
+; |Trabalho2_Stack|pilha~9       ; |Trabalho2_Stack|pilha~9       ; out              ;
+; |Trabalho2_Stack|pilha~10      ; |Trabalho2_Stack|pilha~10      ; out              ;
+; |Trabalho2_Stack|pilha~18      ; |Trabalho2_Stack|pilha~18      ; out              ;
+; |Trabalho2_Stack|pilha~19      ; |Trabalho2_Stack|pilha~19      ; out              ;
+; |Trabalho2_Stack|pilha~20      ; |Trabalho2_Stack|pilha~20      ; out              ;
+; |Trabalho2_Stack|pilha~21      ; |Trabalho2_Stack|pilha~21      ; out              ;
+; |Trabalho2_Stack|pilha~30      ; |Trabalho2_Stack|pilha~30      ; out              ;
+; |Trabalho2_Stack|pilha~31      ; |Trabalho2_Stack|pilha~31      ; out              ;
+; |Trabalho2_Stack|pilha~32      ; |Trabalho2_Stack|pilha~32      ; out              ;
+; |Trabalho2_Stack|pilha~41      ; |Trabalho2_Stack|pilha~41      ; out              ;
+; |Trabalho2_Stack|pilha~42      ; |Trabalho2_Stack|pilha~42      ; out              ;
+; |Trabalho2_Stack|pilha~43      ; |Trabalho2_Stack|pilha~43      ; out              ;
+; |Trabalho2_Stack|pilha~52      ; |Trabalho2_Stack|pilha~52      ; out              ;
+; |Trabalho2_Stack|pilha~53      ; |Trabalho2_Stack|pilha~53      ; out              ;
+; |Trabalho2_Stack|pilha~54      ; |Trabalho2_Stack|pilha~54      ; out              ;
+; |Trabalho2_Stack|pilha~63      ; |Trabalho2_Stack|pilha~63      ; out              ;
+; |Trabalho2_Stack|pilha~64      ; |Trabalho2_Stack|pilha~64      ; out              ;
+; |Trabalho2_Stack|pilha~65      ; |Trabalho2_Stack|pilha~65      ; out              ;
+; |Trabalho2_Stack|pilha~75      ; |Trabalho2_Stack|pilha~75      ; out              ;
+; |Trabalho2_Stack|pilha~76      ; |Trabalho2_Stack|pilha~76      ; out              ;
+; |Trabalho2_Stack|pilha~86      ; |Trabalho2_Stack|pilha~86      ; out              ;
+; |Trabalho2_Stack|pilha~87      ; |Trabalho2_Stack|pilha~87      ; out              ;
+; |Trabalho2_Stack|pilha~88      ; |Trabalho2_Stack|pilha~88      ; out              ;
+; |Trabalho2_Stack|pilha~89      ; |Trabalho2_Stack|pilha~89      ; out              ;
+; |Trabalho2_Stack|pilha~90      ; |Trabalho2_Stack|pilha~90      ; out              ;
+; |Trabalho2_Stack|pilha~91      ; |Trabalho2_Stack|pilha~91      ; out              ;
+; |Trabalho2_Stack|pilha~92      ; |Trabalho2_Stack|pilha~92      ; out              ;
+; |Trabalho2_Stack|pilha~93      ; |Trabalho2_Stack|pilha~93      ; out              ;
+; |Trabalho2_Stack|pilha~94      ; |Trabalho2_Stack|pilha~94      ; out              ;
+; |Trabalho2_Stack|pilha~95      ; |Trabalho2_Stack|pilha~95      ; out              ;
+; |Trabalho2_Stack|pilha~96      ; |Trabalho2_Stack|pilha~96      ; out              ;
+; |Trabalho2_Stack|pilha~97      ; |Trabalho2_Stack|pilha~97      ; out              ;
+; |Trabalho2_Stack|pilha~98      ; |Trabalho2_Stack|pilha~98      ; out              ;
+; |Trabalho2_Stack|pilha~99      ; |Trabalho2_Stack|pilha~99      ; out              ;
+; |Trabalho2_Stack|pilha~100     ; |Trabalho2_Stack|pilha~100     ; out              ;
+; |Trabalho2_Stack|pilha~101     ; |Trabalho2_Stack|pilha~101     ; out              ;
+; |Trabalho2_Stack|pilha~102     ; |Trabalho2_Stack|pilha~102     ; out              ;
+; |Trabalho2_Stack|pilha~103     ; |Trabalho2_Stack|pilha~103     ; out              ;
+; |Trabalho2_Stack|pilha~104     ; |Trabalho2_Stack|pilha~104     ; out              ;
+; |Trabalho2_Stack|pilha~105     ; |Trabalho2_Stack|pilha~105     ; out              ;
+; |Trabalho2_Stack|pilha~106     ; |Trabalho2_Stack|pilha~106     ; out              ;
+; |Trabalho2_Stack|pilha~107     ; |Trabalho2_Stack|pilha~107     ; out              ;
+; |Trabalho2_Stack|pilha~108     ; |Trabalho2_Stack|pilha~108     ; out              ;
+; |Trabalho2_Stack|pilha~109     ; |Trabalho2_Stack|pilha~109     ; out              ;
+; |Trabalho2_Stack|pilha~117     ; |Trabalho2_Stack|pilha~117     ; out              ;
+; |Trabalho2_Stack|pilha~118     ; |Trabalho2_Stack|pilha~118     ; out              ;
+; |Trabalho2_Stack|pilha~119     ; |Trabalho2_Stack|pilha~119     ; out              ;
+; |Trabalho2_Stack|pilha~120     ; |Trabalho2_Stack|pilha~120     ; out              ;
+; |Trabalho2_Stack|pilha~129     ; |Trabalho2_Stack|pilha~129     ; out              ;
+; |Trabalho2_Stack|pilha~130     ; |Trabalho2_Stack|pilha~130     ; out              ;
+; |Trabalho2_Stack|pilha~131     ; |Trabalho2_Stack|pilha~131     ; out              ;
+; |Trabalho2_Stack|pilha~140     ; |Trabalho2_Stack|pilha~140     ; out              ;
+; |Trabalho2_Stack|pilha~141     ; |Trabalho2_Stack|pilha~141     ; out              ;
+; |Trabalho2_Stack|pilha~142     ; |Trabalho2_Stack|pilha~142     ; out              ;
+; |Trabalho2_Stack|pilha~151     ; |Trabalho2_Stack|pilha~151     ; out              ;
+; |Trabalho2_Stack|pilha~152     ; |Trabalho2_Stack|pilha~152     ; out              ;
+; |Trabalho2_Stack|pilha~153     ; |Trabalho2_Stack|pilha~153     ; out              ;
+; |Trabalho2_Stack|pilha~162     ; |Trabalho2_Stack|pilha~162     ; out              ;
+; |Trabalho2_Stack|pilha~163     ; |Trabalho2_Stack|pilha~163     ; out              ;
+; |Trabalho2_Stack|pilha~164     ; |Trabalho2_Stack|pilha~164     ; out              ;
+; |Trabalho2_Stack|pilha~174     ; |Trabalho2_Stack|pilha~174     ; out              ;
+; |Trabalho2_Stack|pilha~175     ; |Trabalho2_Stack|pilha~175     ; out              ;
+; |Trabalho2_Stack|pilha[0][10]  ; |Trabalho2_Stack|pilha[0][10]  ; regout           ;
+; |Trabalho2_Stack|pilha[0][9]   ; |Trabalho2_Stack|pilha[0][9]   ; regout           ;
+; |Trabalho2_Stack|pilha[0][8]   ; |Trabalho2_Stack|pilha[0][8]   ; regout           ;
+; |Trabalho2_Stack|pilha[0][7]   ; |Trabalho2_Stack|pilha[0][7]   ; regout           ;
+; |Trabalho2_Stack|pilha[0][6]   ; |Trabalho2_Stack|pilha[0][6]   ; regout           ;
+; |Trabalho2_Stack|pilha[0][5]   ; |Trabalho2_Stack|pilha[0][5]   ; regout           ;
+; |Trabalho2_Stack|pilha[0][4]   ; |Trabalho2_Stack|pilha[0][4]   ; regout           ;
+; |Trabalho2_Stack|pilha[0][3]   ; |Trabalho2_Stack|pilha[0][3]   ; regout           ;
+; |Trabalho2_Stack|pilha[0][2]   ; |Trabalho2_Stack|pilha[0][2]   ; regout           ;
+; |Trabalho2_Stack|pilha[0][1]   ; |Trabalho2_Stack|pilha[0][1]   ; regout           ;
+; |Trabalho2_Stack|pilha[0][0]   ; |Trabalho2_Stack|pilha[0][0]   ; regout           ;
+; |Trabalho2_Stack|pilha[1][3]   ; |Trabalho2_Stack|pilha[1][3]   ; regout           ;
+; |Trabalho2_Stack|pilha[1][2]   ; |Trabalho2_Stack|pilha[1][2]   ; regout           ;
+; |Trabalho2_Stack|pilha[1][1]   ; |Trabalho2_Stack|pilha[1][1]   ; regout           ;
+; |Trabalho2_Stack|pilha[1][0]   ; |Trabalho2_Stack|pilha[1][0]   ; regout           ;
+; |Trabalho2_Stack|pilha[2][2]   ; |Trabalho2_Stack|pilha[2][2]   ; regout           ;
+; |Trabalho2_Stack|pilha[2][1]   ; |Trabalho2_Stack|pilha[2][1]   ; regout           ;
+; |Trabalho2_Stack|pilha[2][0]   ; |Trabalho2_Stack|pilha[2][0]   ; regout           ;
+; |Trabalho2_Stack|pilha[3][2]   ; |Trabalho2_Stack|pilha[3][2]   ; regout           ;
+; |Trabalho2_Stack|pilha[3][1]   ; |Trabalho2_Stack|pilha[3][1]   ; regout           ;
+; |Trabalho2_Stack|pilha[3][0]   ; |Trabalho2_Stack|pilha[3][0]   ; regout           ;
+; |Trabalho2_Stack|pilha[4][2]   ; |Trabalho2_Stack|pilha[4][2]   ; regout           ;
+; |Trabalho2_Stack|pilha[4][1]   ; |Trabalho2_Stack|pilha[4][1]   ; regout           ;
+; |Trabalho2_Stack|pilha[4][0]   ; |Trabalho2_Stack|pilha[4][0]   ; regout           ;
+; |Trabalho2_Stack|pilha[5][2]   ; |Trabalho2_Stack|pilha[5][2]   ; regout           ;
+; |Trabalho2_Stack|pilha[5][1]   ; |Trabalho2_Stack|pilha[5][1]   ; regout           ;
+; |Trabalho2_Stack|pilha[5][0]   ; |Trabalho2_Stack|pilha[5][0]   ; regout           ;
+; |Trabalho2_Stack|pilha[6][1]   ; |Trabalho2_Stack|pilha[6][1]   ; regout           ;
+; |Trabalho2_Stack|pilha[6][0]   ; |Trabalho2_Stack|pilha[6][0]   ; regout           ;
+; |Trabalho2_Stack|pilha[7][1]   ; |Trabalho2_Stack|pilha[7][1]   ; regout           ;
+; |Trabalho2_Stack|pilha[7][0]   ; |Trabalho2_Stack|pilha[7][0]   ; regout           ;
+; |Trabalho2_Stack|nrst          ; |Trabalho2_Stack|nrst          ; out              ;
+; |Trabalho2_Stack|clk_in        ; |Trabalho2_Stack|clk_in        ; out              ;
+; |Trabalho2_Stack|stack_in[0]   ; |Trabalho2_Stack|stack_in[0]   ; out              ;
+; |Trabalho2_Stack|stack_in[1]   ; |Trabalho2_Stack|stack_in[1]   ; out              ;
+; |Trabalho2_Stack|stack_in[2]   ; |Trabalho2_Stack|stack_in[2]   ; out              ;
+; |Trabalho2_Stack|stack_in[3]   ; |Trabalho2_Stack|stack_in[3]   ; out              ;
+; |Trabalho2_Stack|stack_in[4]   ; |Trabalho2_Stack|stack_in[4]   ; out              ;
+; |Trabalho2_Stack|stack_in[5]   ; |Trabalho2_Stack|stack_in[5]   ; out              ;
+; |Trabalho2_Stack|stack_in[6]   ; |Trabalho2_Stack|stack_in[6]   ; out              ;
+; |Trabalho2_Stack|stack_in[7]   ; |Trabalho2_Stack|stack_in[7]   ; out              ;
+; |Trabalho2_Stack|stack_in[8]   ; |Trabalho2_Stack|stack_in[8]   ; out              ;
+; |Trabalho2_Stack|stack_in[9]   ; |Trabalho2_Stack|stack_in[9]   ; out              ;
+; |Trabalho2_Stack|stack_in[10]  ; |Trabalho2_Stack|stack_in[10]  ; out              ;
+; |Trabalho2_Stack|stack_push    ; |Trabalho2_Stack|stack_push    ; out              ;
+; |Trabalho2_Stack|stack_pop     ; |Trabalho2_Stack|stack_pop     ; out              ;
+; |Trabalho2_Stack|stack_out[0]  ; |Trabalho2_Stack|stack_out[0]  ; pin_out          ;
+; |Trabalho2_Stack|stack_out[1]  ; |Trabalho2_Stack|stack_out[1]  ; pin_out          ;
+; |Trabalho2_Stack|stack_out[2]  ; |Trabalho2_Stack|stack_out[2]  ; pin_out          ;
+; |Trabalho2_Stack|stack_out[3]  ; |Trabalho2_Stack|stack_out[3]  ; pin_out          ;
+; |Trabalho2_Stack|stack_out[4]  ; |Trabalho2_Stack|stack_out[4]  ; pin_out          ;
+; |Trabalho2_Stack|stack_out[5]  ; |Trabalho2_Stack|stack_out[5]  ; pin_out          ;
+; |Trabalho2_Stack|stack_out[6]  ; |Trabalho2_Stack|stack_out[6]  ; pin_out          ;
+; |Trabalho2_Stack|stack_out[7]  ; |Trabalho2_Stack|stack_out[7]  ; pin_out          ;
+; |Trabalho2_Stack|stack_out[8]  ; |Trabalho2_Stack|stack_out[8]  ; pin_out          ;
+; |Trabalho2_Stack|stack_out[9]  ; |Trabalho2_Stack|stack_out[9]  ; pin_out          ;
+; |Trabalho2_Stack|stack_out[10] ; |Trabalho2_Stack|stack_out[10] ; pin_out          ;
++--------------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                         ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |Trabalho2_Stack|pilha~11     ; |Trabalho2_Stack|pilha~11     ; out              ;
+; |Trabalho2_Stack|pilha~12     ; |Trabalho2_Stack|pilha~12     ; out              ;
+; |Trabalho2_Stack|pilha~13     ; |Trabalho2_Stack|pilha~13     ; out              ;
+; |Trabalho2_Stack|pilha~14     ; |Trabalho2_Stack|pilha~14     ; out              ;
+; |Trabalho2_Stack|pilha~15     ; |Trabalho2_Stack|pilha~15     ; out              ;
+; |Trabalho2_Stack|pilha~16     ; |Trabalho2_Stack|pilha~16     ; out              ;
+; |Trabalho2_Stack|pilha~17     ; |Trabalho2_Stack|pilha~17     ; out              ;
+; |Trabalho2_Stack|pilha~22     ; |Trabalho2_Stack|pilha~22     ; out              ;
+; |Trabalho2_Stack|pilha~23     ; |Trabalho2_Stack|pilha~23     ; out              ;
+; |Trabalho2_Stack|pilha~24     ; |Trabalho2_Stack|pilha~24     ; out              ;
+; |Trabalho2_Stack|pilha~25     ; |Trabalho2_Stack|pilha~25     ; out              ;
+; |Trabalho2_Stack|pilha~26     ; |Trabalho2_Stack|pilha~26     ; out              ;
+; |Trabalho2_Stack|pilha~27     ; |Trabalho2_Stack|pilha~27     ; out              ;
+; |Trabalho2_Stack|pilha~28     ; |Trabalho2_Stack|pilha~28     ; out              ;
+; |Trabalho2_Stack|pilha~29     ; |Trabalho2_Stack|pilha~29     ; out              ;
+; |Trabalho2_Stack|pilha~33     ; |Trabalho2_Stack|pilha~33     ; out              ;
+; |Trabalho2_Stack|pilha~34     ; |Trabalho2_Stack|pilha~34     ; out              ;
+; |Trabalho2_Stack|pilha~35     ; |Trabalho2_Stack|pilha~35     ; out              ;
+; |Trabalho2_Stack|pilha~36     ; |Trabalho2_Stack|pilha~36     ; out              ;
+; |Trabalho2_Stack|pilha~37     ; |Trabalho2_Stack|pilha~37     ; out              ;
+; |Trabalho2_Stack|pilha~38     ; |Trabalho2_Stack|pilha~38     ; out              ;
+; |Trabalho2_Stack|pilha~39     ; |Trabalho2_Stack|pilha~39     ; out              ;
+; |Trabalho2_Stack|pilha~40     ; |Trabalho2_Stack|pilha~40     ; out              ;
+; |Trabalho2_Stack|pilha~44     ; |Trabalho2_Stack|pilha~44     ; out              ;
+; |Trabalho2_Stack|pilha~45     ; |Trabalho2_Stack|pilha~45     ; out              ;
+; |Trabalho2_Stack|pilha~46     ; |Trabalho2_Stack|pilha~46     ; out              ;
+; |Trabalho2_Stack|pilha~47     ; |Trabalho2_Stack|pilha~47     ; out              ;
+; |Trabalho2_Stack|pilha~48     ; |Trabalho2_Stack|pilha~48     ; out              ;
+; |Trabalho2_Stack|pilha~49     ; |Trabalho2_Stack|pilha~49     ; out              ;
+; |Trabalho2_Stack|pilha~50     ; |Trabalho2_Stack|pilha~50     ; out              ;
+; |Trabalho2_Stack|pilha~51     ; |Trabalho2_Stack|pilha~51     ; out              ;
+; |Trabalho2_Stack|pilha~55     ; |Trabalho2_Stack|pilha~55     ; out              ;
+; |Trabalho2_Stack|pilha~56     ; |Trabalho2_Stack|pilha~56     ; out              ;
+; |Trabalho2_Stack|pilha~57     ; |Trabalho2_Stack|pilha~57     ; out              ;
+; |Trabalho2_Stack|pilha~58     ; |Trabalho2_Stack|pilha~58     ; out              ;
+; |Trabalho2_Stack|pilha~59     ; |Trabalho2_Stack|pilha~59     ; out              ;
+; |Trabalho2_Stack|pilha~60     ; |Trabalho2_Stack|pilha~60     ; out              ;
+; |Trabalho2_Stack|pilha~61     ; |Trabalho2_Stack|pilha~61     ; out              ;
+; |Trabalho2_Stack|pilha~62     ; |Trabalho2_Stack|pilha~62     ; out              ;
+; |Trabalho2_Stack|pilha~66     ; |Trabalho2_Stack|pilha~66     ; out              ;
+; |Trabalho2_Stack|pilha~67     ; |Trabalho2_Stack|pilha~67     ; out              ;
+; |Trabalho2_Stack|pilha~68     ; |Trabalho2_Stack|pilha~68     ; out              ;
+; |Trabalho2_Stack|pilha~69     ; |Trabalho2_Stack|pilha~69     ; out              ;
+; |Trabalho2_Stack|pilha~70     ; |Trabalho2_Stack|pilha~70     ; out              ;
+; |Trabalho2_Stack|pilha~71     ; |Trabalho2_Stack|pilha~71     ; out              ;
+; |Trabalho2_Stack|pilha~72     ; |Trabalho2_Stack|pilha~72     ; out              ;
+; |Trabalho2_Stack|pilha~73     ; |Trabalho2_Stack|pilha~73     ; out              ;
+; |Trabalho2_Stack|pilha~74     ; |Trabalho2_Stack|pilha~74     ; out              ;
+; |Trabalho2_Stack|pilha~77     ; |Trabalho2_Stack|pilha~77     ; out              ;
+; |Trabalho2_Stack|pilha~78     ; |Trabalho2_Stack|pilha~78     ; out              ;
+; |Trabalho2_Stack|pilha~79     ; |Trabalho2_Stack|pilha~79     ; out              ;
+; |Trabalho2_Stack|pilha~80     ; |Trabalho2_Stack|pilha~80     ; out              ;
+; |Trabalho2_Stack|pilha~81     ; |Trabalho2_Stack|pilha~81     ; out              ;
+; |Trabalho2_Stack|pilha~82     ; |Trabalho2_Stack|pilha~82     ; out              ;
+; |Trabalho2_Stack|pilha~83     ; |Trabalho2_Stack|pilha~83     ; out              ;
+; |Trabalho2_Stack|pilha~84     ; |Trabalho2_Stack|pilha~84     ; out              ;
+; |Trabalho2_Stack|pilha~85     ; |Trabalho2_Stack|pilha~85     ; out              ;
+; |Trabalho2_Stack|pilha~110    ; |Trabalho2_Stack|pilha~110    ; out              ;
+; |Trabalho2_Stack|pilha~111    ; |Trabalho2_Stack|pilha~111    ; out              ;
+; |Trabalho2_Stack|pilha~112    ; |Trabalho2_Stack|pilha~112    ; out              ;
+; |Trabalho2_Stack|pilha~113    ; |Trabalho2_Stack|pilha~113    ; out              ;
+; |Trabalho2_Stack|pilha~114    ; |Trabalho2_Stack|pilha~114    ; out              ;
+; |Trabalho2_Stack|pilha~115    ; |Trabalho2_Stack|pilha~115    ; out              ;
+; |Trabalho2_Stack|pilha~116    ; |Trabalho2_Stack|pilha~116    ; out              ;
+; |Trabalho2_Stack|pilha~121    ; |Trabalho2_Stack|pilha~121    ; out              ;
+; |Trabalho2_Stack|pilha~122    ; |Trabalho2_Stack|pilha~122    ; out              ;
+; |Trabalho2_Stack|pilha~123    ; |Trabalho2_Stack|pilha~123    ; out              ;
+; |Trabalho2_Stack|pilha~124    ; |Trabalho2_Stack|pilha~124    ; out              ;
+; |Trabalho2_Stack|pilha~125    ; |Trabalho2_Stack|pilha~125    ; out              ;
+; |Trabalho2_Stack|pilha~126    ; |Trabalho2_Stack|pilha~126    ; out              ;
+; |Trabalho2_Stack|pilha~127    ; |Trabalho2_Stack|pilha~127    ; out              ;
+; |Trabalho2_Stack|pilha~128    ; |Trabalho2_Stack|pilha~128    ; out              ;
+; |Trabalho2_Stack|pilha~132    ; |Trabalho2_Stack|pilha~132    ; out              ;
+; |Trabalho2_Stack|pilha~133    ; |Trabalho2_Stack|pilha~133    ; out              ;
+; |Trabalho2_Stack|pilha~134    ; |Trabalho2_Stack|pilha~134    ; out              ;
+; |Trabalho2_Stack|pilha~135    ; |Trabalho2_Stack|pilha~135    ; out              ;
+; |Trabalho2_Stack|pilha~136    ; |Trabalho2_Stack|pilha~136    ; out              ;
+; |Trabalho2_Stack|pilha~137    ; |Trabalho2_Stack|pilha~137    ; out              ;
+; |Trabalho2_Stack|pilha~138    ; |Trabalho2_Stack|pilha~138    ; out              ;
+; |Trabalho2_Stack|pilha~139    ; |Trabalho2_Stack|pilha~139    ; out              ;
+; |Trabalho2_Stack|pilha~143    ; |Trabalho2_Stack|pilha~143    ; out              ;
+; |Trabalho2_Stack|pilha~144    ; |Trabalho2_Stack|pilha~144    ; out              ;
+; |Trabalho2_Stack|pilha~145    ; |Trabalho2_Stack|pilha~145    ; out              ;
+; |Trabalho2_Stack|pilha~146    ; |Trabalho2_Stack|pilha~146    ; out              ;
+; |Trabalho2_Stack|pilha~147    ; |Trabalho2_Stack|pilha~147    ; out              ;
+; |Trabalho2_Stack|pilha~148    ; |Trabalho2_Stack|pilha~148    ; out              ;
+; |Trabalho2_Stack|pilha~149    ; |Trabalho2_Stack|pilha~149    ; out              ;
+; |Trabalho2_Stack|pilha~150    ; |Trabalho2_Stack|pilha~150    ; out              ;
+; |Trabalho2_Stack|pilha~154    ; |Trabalho2_Stack|pilha~154    ; out              ;
+; |Trabalho2_Stack|pilha~155    ; |Trabalho2_Stack|pilha~155    ; out              ;
+; |Trabalho2_Stack|pilha~156    ; |Trabalho2_Stack|pilha~156    ; out              ;
+; |Trabalho2_Stack|pilha~157    ; |Trabalho2_Stack|pilha~157    ; out              ;
+; |Trabalho2_Stack|pilha~158    ; |Trabalho2_Stack|pilha~158    ; out              ;
+; |Trabalho2_Stack|pilha~159    ; |Trabalho2_Stack|pilha~159    ; out              ;
+; |Trabalho2_Stack|pilha~160    ; |Trabalho2_Stack|pilha~160    ; out              ;
+; |Trabalho2_Stack|pilha~161    ; |Trabalho2_Stack|pilha~161    ; out              ;
+; |Trabalho2_Stack|pilha~165    ; |Trabalho2_Stack|pilha~165    ; out              ;
+; |Trabalho2_Stack|pilha~166    ; |Trabalho2_Stack|pilha~166    ; out              ;
+; |Trabalho2_Stack|pilha~167    ; |Trabalho2_Stack|pilha~167    ; out              ;
+; |Trabalho2_Stack|pilha~168    ; |Trabalho2_Stack|pilha~168    ; out              ;
+; |Trabalho2_Stack|pilha~169    ; |Trabalho2_Stack|pilha~169    ; out              ;
+; |Trabalho2_Stack|pilha~170    ; |Trabalho2_Stack|pilha~170    ; out              ;
+; |Trabalho2_Stack|pilha~171    ; |Trabalho2_Stack|pilha~171    ; out              ;
+; |Trabalho2_Stack|pilha~172    ; |Trabalho2_Stack|pilha~172    ; out              ;
+; |Trabalho2_Stack|pilha~173    ; |Trabalho2_Stack|pilha~173    ; out              ;
+; |Trabalho2_Stack|pilha[1][10] ; |Trabalho2_Stack|pilha[1][10] ; regout           ;
+; |Trabalho2_Stack|pilha[1][9]  ; |Trabalho2_Stack|pilha[1][9]  ; regout           ;
+; |Trabalho2_Stack|pilha[1][8]  ; |Trabalho2_Stack|pilha[1][8]  ; regout           ;
+; |Trabalho2_Stack|pilha[1][7]  ; |Trabalho2_Stack|pilha[1][7]  ; regout           ;
+; |Trabalho2_Stack|pilha[1][6]  ; |Trabalho2_Stack|pilha[1][6]  ; regout           ;
+; |Trabalho2_Stack|pilha[1][5]  ; |Trabalho2_Stack|pilha[1][5]  ; regout           ;
+; |Trabalho2_Stack|pilha[1][4]  ; |Trabalho2_Stack|pilha[1][4]  ; regout           ;
+; |Trabalho2_Stack|pilha[2][10] ; |Trabalho2_Stack|pilha[2][10] ; regout           ;
+; |Trabalho2_Stack|pilha[2][9]  ; |Trabalho2_Stack|pilha[2][9]  ; regout           ;
+; |Trabalho2_Stack|pilha[2][8]  ; |Trabalho2_Stack|pilha[2][8]  ; regout           ;
+; |Trabalho2_Stack|pilha[2][7]  ; |Trabalho2_Stack|pilha[2][7]  ; regout           ;
+; |Trabalho2_Stack|pilha[2][6]  ; |Trabalho2_Stack|pilha[2][6]  ; regout           ;
+; |Trabalho2_Stack|pilha[2][5]  ; |Trabalho2_Stack|pilha[2][5]  ; regout           ;
+; |Trabalho2_Stack|pilha[2][4]  ; |Trabalho2_Stack|pilha[2][4]  ; regout           ;
+; |Trabalho2_Stack|pilha[2][3]  ; |Trabalho2_Stack|pilha[2][3]  ; regout           ;
+; |Trabalho2_Stack|pilha[3][10] ; |Trabalho2_Stack|pilha[3][10] ; regout           ;
+; |Trabalho2_Stack|pilha[3][9]  ; |Trabalho2_Stack|pilha[3][9]  ; regout           ;
+; |Trabalho2_Stack|pilha[3][8]  ; |Trabalho2_Stack|pilha[3][8]  ; regout           ;
+; |Trabalho2_Stack|pilha[3][7]  ; |Trabalho2_Stack|pilha[3][7]  ; regout           ;
+; |Trabalho2_Stack|pilha[3][6]  ; |Trabalho2_Stack|pilha[3][6]  ; regout           ;
+; |Trabalho2_Stack|pilha[3][5]  ; |Trabalho2_Stack|pilha[3][5]  ; regout           ;
+; |Trabalho2_Stack|pilha[3][4]  ; |Trabalho2_Stack|pilha[3][4]  ; regout           ;
+; |Trabalho2_Stack|pilha[3][3]  ; |Trabalho2_Stack|pilha[3][3]  ; regout           ;
+; |Trabalho2_Stack|pilha[4][10] ; |Trabalho2_Stack|pilha[4][10] ; regout           ;
+; |Trabalho2_Stack|pilha[4][9]  ; |Trabalho2_Stack|pilha[4][9]  ; regout           ;
+; |Trabalho2_Stack|pilha[4][8]  ; |Trabalho2_Stack|pilha[4][8]  ; regout           ;
+; |Trabalho2_Stack|pilha[4][7]  ; |Trabalho2_Stack|pilha[4][7]  ; regout           ;
+; |Trabalho2_Stack|pilha[4][6]  ; |Trabalho2_Stack|pilha[4][6]  ; regout           ;
+; |Trabalho2_Stack|pilha[4][5]  ; |Trabalho2_Stack|pilha[4][5]  ; regout           ;
+; |Trabalho2_Stack|pilha[4][4]  ; |Trabalho2_Stack|pilha[4][4]  ; regout           ;
+; |Trabalho2_Stack|pilha[4][3]  ; |Trabalho2_Stack|pilha[4][3]  ; regout           ;
+; |Trabalho2_Stack|pilha[5][10] ; |Trabalho2_Stack|pilha[5][10] ; regout           ;
+; |Trabalho2_Stack|pilha[5][9]  ; |Trabalho2_Stack|pilha[5][9]  ; regout           ;
+; |Trabalho2_Stack|pilha[5][8]  ; |Trabalho2_Stack|pilha[5][8]  ; regout           ;
+; |Trabalho2_Stack|pilha[5][7]  ; |Trabalho2_Stack|pilha[5][7]  ; regout           ;
+; |Trabalho2_Stack|pilha[5][6]  ; |Trabalho2_Stack|pilha[5][6]  ; regout           ;
+; |Trabalho2_Stack|pilha[5][5]  ; |Trabalho2_Stack|pilha[5][5]  ; regout           ;
+; |Trabalho2_Stack|pilha[5][4]  ; |Trabalho2_Stack|pilha[5][4]  ; regout           ;
+; |Trabalho2_Stack|pilha[5][3]  ; |Trabalho2_Stack|pilha[5][3]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][10] ; |Trabalho2_Stack|pilha[6][10] ; regout           ;
+; |Trabalho2_Stack|pilha[6][9]  ; |Trabalho2_Stack|pilha[6][9]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][8]  ; |Trabalho2_Stack|pilha[6][8]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][7]  ; |Trabalho2_Stack|pilha[6][7]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][6]  ; |Trabalho2_Stack|pilha[6][6]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][5]  ; |Trabalho2_Stack|pilha[6][5]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][4]  ; |Trabalho2_Stack|pilha[6][4]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][3]  ; |Trabalho2_Stack|pilha[6][3]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][2]  ; |Trabalho2_Stack|pilha[6][2]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][10] ; |Trabalho2_Stack|pilha[7][10] ; regout           ;
+; |Trabalho2_Stack|pilha[7][9]  ; |Trabalho2_Stack|pilha[7][9]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][8]  ; |Trabalho2_Stack|pilha[7][8]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][7]  ; |Trabalho2_Stack|pilha[7][7]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][6]  ; |Trabalho2_Stack|pilha[7][6]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][5]  ; |Trabalho2_Stack|pilha[7][5]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][4]  ; |Trabalho2_Stack|pilha[7][4]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][3]  ; |Trabalho2_Stack|pilha[7][3]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][2]  ; |Trabalho2_Stack|pilha[7][2]  ; regout           ;
++-------------------------------+-------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                         ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |Trabalho2_Stack|pilha~11     ; |Trabalho2_Stack|pilha~11     ; out              ;
+; |Trabalho2_Stack|pilha~12     ; |Trabalho2_Stack|pilha~12     ; out              ;
+; |Trabalho2_Stack|pilha~13     ; |Trabalho2_Stack|pilha~13     ; out              ;
+; |Trabalho2_Stack|pilha~14     ; |Trabalho2_Stack|pilha~14     ; out              ;
+; |Trabalho2_Stack|pilha~15     ; |Trabalho2_Stack|pilha~15     ; out              ;
+; |Trabalho2_Stack|pilha~16     ; |Trabalho2_Stack|pilha~16     ; out              ;
+; |Trabalho2_Stack|pilha~17     ; |Trabalho2_Stack|pilha~17     ; out              ;
+; |Trabalho2_Stack|pilha~22     ; |Trabalho2_Stack|pilha~22     ; out              ;
+; |Trabalho2_Stack|pilha~23     ; |Trabalho2_Stack|pilha~23     ; out              ;
+; |Trabalho2_Stack|pilha~24     ; |Trabalho2_Stack|pilha~24     ; out              ;
+; |Trabalho2_Stack|pilha~25     ; |Trabalho2_Stack|pilha~25     ; out              ;
+; |Trabalho2_Stack|pilha~26     ; |Trabalho2_Stack|pilha~26     ; out              ;
+; |Trabalho2_Stack|pilha~27     ; |Trabalho2_Stack|pilha~27     ; out              ;
+; |Trabalho2_Stack|pilha~28     ; |Trabalho2_Stack|pilha~28     ; out              ;
+; |Trabalho2_Stack|pilha~29     ; |Trabalho2_Stack|pilha~29     ; out              ;
+; |Trabalho2_Stack|pilha~33     ; |Trabalho2_Stack|pilha~33     ; out              ;
+; |Trabalho2_Stack|pilha~34     ; |Trabalho2_Stack|pilha~34     ; out              ;
+; |Trabalho2_Stack|pilha~35     ; |Trabalho2_Stack|pilha~35     ; out              ;
+; |Trabalho2_Stack|pilha~36     ; |Trabalho2_Stack|pilha~36     ; out              ;
+; |Trabalho2_Stack|pilha~37     ; |Trabalho2_Stack|pilha~37     ; out              ;
+; |Trabalho2_Stack|pilha~38     ; |Trabalho2_Stack|pilha~38     ; out              ;
+; |Trabalho2_Stack|pilha~39     ; |Trabalho2_Stack|pilha~39     ; out              ;
+; |Trabalho2_Stack|pilha~40     ; |Trabalho2_Stack|pilha~40     ; out              ;
+; |Trabalho2_Stack|pilha~44     ; |Trabalho2_Stack|pilha~44     ; out              ;
+; |Trabalho2_Stack|pilha~45     ; |Trabalho2_Stack|pilha~45     ; out              ;
+; |Trabalho2_Stack|pilha~46     ; |Trabalho2_Stack|pilha~46     ; out              ;
+; |Trabalho2_Stack|pilha~47     ; |Trabalho2_Stack|pilha~47     ; out              ;
+; |Trabalho2_Stack|pilha~48     ; |Trabalho2_Stack|pilha~48     ; out              ;
+; |Trabalho2_Stack|pilha~49     ; |Trabalho2_Stack|pilha~49     ; out              ;
+; |Trabalho2_Stack|pilha~50     ; |Trabalho2_Stack|pilha~50     ; out              ;
+; |Trabalho2_Stack|pilha~51     ; |Trabalho2_Stack|pilha~51     ; out              ;
+; |Trabalho2_Stack|pilha~55     ; |Trabalho2_Stack|pilha~55     ; out              ;
+; |Trabalho2_Stack|pilha~56     ; |Trabalho2_Stack|pilha~56     ; out              ;
+; |Trabalho2_Stack|pilha~57     ; |Trabalho2_Stack|pilha~57     ; out              ;
+; |Trabalho2_Stack|pilha~58     ; |Trabalho2_Stack|pilha~58     ; out              ;
+; |Trabalho2_Stack|pilha~59     ; |Trabalho2_Stack|pilha~59     ; out              ;
+; |Trabalho2_Stack|pilha~60     ; |Trabalho2_Stack|pilha~60     ; out              ;
+; |Trabalho2_Stack|pilha~61     ; |Trabalho2_Stack|pilha~61     ; out              ;
+; |Trabalho2_Stack|pilha~62     ; |Trabalho2_Stack|pilha~62     ; out              ;
+; |Trabalho2_Stack|pilha~66     ; |Trabalho2_Stack|pilha~66     ; out              ;
+; |Trabalho2_Stack|pilha~67     ; |Trabalho2_Stack|pilha~67     ; out              ;
+; |Trabalho2_Stack|pilha~68     ; |Trabalho2_Stack|pilha~68     ; out              ;
+; |Trabalho2_Stack|pilha~69     ; |Trabalho2_Stack|pilha~69     ; out              ;
+; |Trabalho2_Stack|pilha~70     ; |Trabalho2_Stack|pilha~70     ; out              ;
+; |Trabalho2_Stack|pilha~71     ; |Trabalho2_Stack|pilha~71     ; out              ;
+; |Trabalho2_Stack|pilha~72     ; |Trabalho2_Stack|pilha~72     ; out              ;
+; |Trabalho2_Stack|pilha~73     ; |Trabalho2_Stack|pilha~73     ; out              ;
+; |Trabalho2_Stack|pilha~74     ; |Trabalho2_Stack|pilha~74     ; out              ;
+; |Trabalho2_Stack|pilha~77     ; |Trabalho2_Stack|pilha~77     ; out              ;
+; |Trabalho2_Stack|pilha~78     ; |Trabalho2_Stack|pilha~78     ; out              ;
+; |Trabalho2_Stack|pilha~79     ; |Trabalho2_Stack|pilha~79     ; out              ;
+; |Trabalho2_Stack|pilha~80     ; |Trabalho2_Stack|pilha~80     ; out              ;
+; |Trabalho2_Stack|pilha~81     ; |Trabalho2_Stack|pilha~81     ; out              ;
+; |Trabalho2_Stack|pilha~82     ; |Trabalho2_Stack|pilha~82     ; out              ;
+; |Trabalho2_Stack|pilha~83     ; |Trabalho2_Stack|pilha~83     ; out              ;
+; |Trabalho2_Stack|pilha~84     ; |Trabalho2_Stack|pilha~84     ; out              ;
+; |Trabalho2_Stack|pilha~85     ; |Trabalho2_Stack|pilha~85     ; out              ;
+; |Trabalho2_Stack|pilha~110    ; |Trabalho2_Stack|pilha~110    ; out              ;
+; |Trabalho2_Stack|pilha~111    ; |Trabalho2_Stack|pilha~111    ; out              ;
+; |Trabalho2_Stack|pilha~112    ; |Trabalho2_Stack|pilha~112    ; out              ;
+; |Trabalho2_Stack|pilha~113    ; |Trabalho2_Stack|pilha~113    ; out              ;
+; |Trabalho2_Stack|pilha~114    ; |Trabalho2_Stack|pilha~114    ; out              ;
+; |Trabalho2_Stack|pilha~115    ; |Trabalho2_Stack|pilha~115    ; out              ;
+; |Trabalho2_Stack|pilha~116    ; |Trabalho2_Stack|pilha~116    ; out              ;
+; |Trabalho2_Stack|pilha~121    ; |Trabalho2_Stack|pilha~121    ; out              ;
+; |Trabalho2_Stack|pilha~122    ; |Trabalho2_Stack|pilha~122    ; out              ;
+; |Trabalho2_Stack|pilha~123    ; |Trabalho2_Stack|pilha~123    ; out              ;
+; |Trabalho2_Stack|pilha~124    ; |Trabalho2_Stack|pilha~124    ; out              ;
+; |Trabalho2_Stack|pilha~125    ; |Trabalho2_Stack|pilha~125    ; out              ;
+; |Trabalho2_Stack|pilha~126    ; |Trabalho2_Stack|pilha~126    ; out              ;
+; |Trabalho2_Stack|pilha~127    ; |Trabalho2_Stack|pilha~127    ; out              ;
+; |Trabalho2_Stack|pilha~128    ; |Trabalho2_Stack|pilha~128    ; out              ;
+; |Trabalho2_Stack|pilha~132    ; |Trabalho2_Stack|pilha~132    ; out              ;
+; |Trabalho2_Stack|pilha~133    ; |Trabalho2_Stack|pilha~133    ; out              ;
+; |Trabalho2_Stack|pilha~134    ; |Trabalho2_Stack|pilha~134    ; out              ;
+; |Trabalho2_Stack|pilha~135    ; |Trabalho2_Stack|pilha~135    ; out              ;
+; |Trabalho2_Stack|pilha~136    ; |Trabalho2_Stack|pilha~136    ; out              ;
+; |Trabalho2_Stack|pilha~137    ; |Trabalho2_Stack|pilha~137    ; out              ;
+; |Trabalho2_Stack|pilha~138    ; |Trabalho2_Stack|pilha~138    ; out              ;
+; |Trabalho2_Stack|pilha~139    ; |Trabalho2_Stack|pilha~139    ; out              ;
+; |Trabalho2_Stack|pilha~143    ; |Trabalho2_Stack|pilha~143    ; out              ;
+; |Trabalho2_Stack|pilha~144    ; |Trabalho2_Stack|pilha~144    ; out              ;
+; |Trabalho2_Stack|pilha~145    ; |Trabalho2_Stack|pilha~145    ; out              ;
+; |Trabalho2_Stack|pilha~146    ; |Trabalho2_Stack|pilha~146    ; out              ;
+; |Trabalho2_Stack|pilha~147    ; |Trabalho2_Stack|pilha~147    ; out              ;
+; |Trabalho2_Stack|pilha~148    ; |Trabalho2_Stack|pilha~148    ; out              ;
+; |Trabalho2_Stack|pilha~149    ; |Trabalho2_Stack|pilha~149    ; out              ;
+; |Trabalho2_Stack|pilha~150    ; |Trabalho2_Stack|pilha~150    ; out              ;
+; |Trabalho2_Stack|pilha~154    ; |Trabalho2_Stack|pilha~154    ; out              ;
+; |Trabalho2_Stack|pilha~155    ; |Trabalho2_Stack|pilha~155    ; out              ;
+; |Trabalho2_Stack|pilha~156    ; |Trabalho2_Stack|pilha~156    ; out              ;
+; |Trabalho2_Stack|pilha~157    ; |Trabalho2_Stack|pilha~157    ; out              ;
+; |Trabalho2_Stack|pilha~158    ; |Trabalho2_Stack|pilha~158    ; out              ;
+; |Trabalho2_Stack|pilha~159    ; |Trabalho2_Stack|pilha~159    ; out              ;
+; |Trabalho2_Stack|pilha~160    ; |Trabalho2_Stack|pilha~160    ; out              ;
+; |Trabalho2_Stack|pilha~161    ; |Trabalho2_Stack|pilha~161    ; out              ;
+; |Trabalho2_Stack|pilha~165    ; |Trabalho2_Stack|pilha~165    ; out              ;
+; |Trabalho2_Stack|pilha~166    ; |Trabalho2_Stack|pilha~166    ; out              ;
+; |Trabalho2_Stack|pilha~167    ; |Trabalho2_Stack|pilha~167    ; out              ;
+; |Trabalho2_Stack|pilha~168    ; |Trabalho2_Stack|pilha~168    ; out              ;
+; |Trabalho2_Stack|pilha~169    ; |Trabalho2_Stack|pilha~169    ; out              ;
+; |Trabalho2_Stack|pilha~170    ; |Trabalho2_Stack|pilha~170    ; out              ;
+; |Trabalho2_Stack|pilha~171    ; |Trabalho2_Stack|pilha~171    ; out              ;
+; |Trabalho2_Stack|pilha~172    ; |Trabalho2_Stack|pilha~172    ; out              ;
+; |Trabalho2_Stack|pilha~173    ; |Trabalho2_Stack|pilha~173    ; out              ;
+; |Trabalho2_Stack|pilha[1][10] ; |Trabalho2_Stack|pilha[1][10] ; regout           ;
+; |Trabalho2_Stack|pilha[1][9]  ; |Trabalho2_Stack|pilha[1][9]  ; regout           ;
+; |Trabalho2_Stack|pilha[1][8]  ; |Trabalho2_Stack|pilha[1][8]  ; regout           ;
+; |Trabalho2_Stack|pilha[1][7]  ; |Trabalho2_Stack|pilha[1][7]  ; regout           ;
+; |Trabalho2_Stack|pilha[1][6]  ; |Trabalho2_Stack|pilha[1][6]  ; regout           ;
+; |Trabalho2_Stack|pilha[1][5]  ; |Trabalho2_Stack|pilha[1][5]  ; regout           ;
+; |Trabalho2_Stack|pilha[1][4]  ; |Trabalho2_Stack|pilha[1][4]  ; regout           ;
+; |Trabalho2_Stack|pilha[2][10] ; |Trabalho2_Stack|pilha[2][10] ; regout           ;
+; |Trabalho2_Stack|pilha[2][9]  ; |Trabalho2_Stack|pilha[2][9]  ; regout           ;
+; |Trabalho2_Stack|pilha[2][8]  ; |Trabalho2_Stack|pilha[2][8]  ; regout           ;
+; |Trabalho2_Stack|pilha[2][7]  ; |Trabalho2_Stack|pilha[2][7]  ; regout           ;
+; |Trabalho2_Stack|pilha[2][6]  ; |Trabalho2_Stack|pilha[2][6]  ; regout           ;
+; |Trabalho2_Stack|pilha[2][5]  ; |Trabalho2_Stack|pilha[2][5]  ; regout           ;
+; |Trabalho2_Stack|pilha[2][4]  ; |Trabalho2_Stack|pilha[2][4]  ; regout           ;
+; |Trabalho2_Stack|pilha[2][3]  ; |Trabalho2_Stack|pilha[2][3]  ; regout           ;
+; |Trabalho2_Stack|pilha[3][10] ; |Trabalho2_Stack|pilha[3][10] ; regout           ;
+; |Trabalho2_Stack|pilha[3][9]  ; |Trabalho2_Stack|pilha[3][9]  ; regout           ;
+; |Trabalho2_Stack|pilha[3][8]  ; |Trabalho2_Stack|pilha[3][8]  ; regout           ;
+; |Trabalho2_Stack|pilha[3][7]  ; |Trabalho2_Stack|pilha[3][7]  ; regout           ;
+; |Trabalho2_Stack|pilha[3][6]  ; |Trabalho2_Stack|pilha[3][6]  ; regout           ;
+; |Trabalho2_Stack|pilha[3][5]  ; |Trabalho2_Stack|pilha[3][5]  ; regout           ;
+; |Trabalho2_Stack|pilha[3][4]  ; |Trabalho2_Stack|pilha[3][4]  ; regout           ;
+; |Trabalho2_Stack|pilha[3][3]  ; |Trabalho2_Stack|pilha[3][3]  ; regout           ;
+; |Trabalho2_Stack|pilha[4][10] ; |Trabalho2_Stack|pilha[4][10] ; regout           ;
+; |Trabalho2_Stack|pilha[4][9]  ; |Trabalho2_Stack|pilha[4][9]  ; regout           ;
+; |Trabalho2_Stack|pilha[4][8]  ; |Trabalho2_Stack|pilha[4][8]  ; regout           ;
+; |Trabalho2_Stack|pilha[4][7]  ; |Trabalho2_Stack|pilha[4][7]  ; regout           ;
+; |Trabalho2_Stack|pilha[4][6]  ; |Trabalho2_Stack|pilha[4][6]  ; regout           ;
+; |Trabalho2_Stack|pilha[4][5]  ; |Trabalho2_Stack|pilha[4][5]  ; regout           ;
+; |Trabalho2_Stack|pilha[4][4]  ; |Trabalho2_Stack|pilha[4][4]  ; regout           ;
+; |Trabalho2_Stack|pilha[4][3]  ; |Trabalho2_Stack|pilha[4][3]  ; regout           ;
+; |Trabalho2_Stack|pilha[5][10] ; |Trabalho2_Stack|pilha[5][10] ; regout           ;
+; |Trabalho2_Stack|pilha[5][9]  ; |Trabalho2_Stack|pilha[5][9]  ; regout           ;
+; |Trabalho2_Stack|pilha[5][8]  ; |Trabalho2_Stack|pilha[5][8]  ; regout           ;
+; |Trabalho2_Stack|pilha[5][7]  ; |Trabalho2_Stack|pilha[5][7]  ; regout           ;
+; |Trabalho2_Stack|pilha[5][6]  ; |Trabalho2_Stack|pilha[5][6]  ; regout           ;
+; |Trabalho2_Stack|pilha[5][5]  ; |Trabalho2_Stack|pilha[5][5]  ; regout           ;
+; |Trabalho2_Stack|pilha[5][4]  ; |Trabalho2_Stack|pilha[5][4]  ; regout           ;
+; |Trabalho2_Stack|pilha[5][3]  ; |Trabalho2_Stack|pilha[5][3]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][10] ; |Trabalho2_Stack|pilha[6][10] ; regout           ;
+; |Trabalho2_Stack|pilha[6][9]  ; |Trabalho2_Stack|pilha[6][9]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][8]  ; |Trabalho2_Stack|pilha[6][8]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][7]  ; |Trabalho2_Stack|pilha[6][7]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][6]  ; |Trabalho2_Stack|pilha[6][6]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][5]  ; |Trabalho2_Stack|pilha[6][5]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][4]  ; |Trabalho2_Stack|pilha[6][4]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][3]  ; |Trabalho2_Stack|pilha[6][3]  ; regout           ;
+; |Trabalho2_Stack|pilha[6][2]  ; |Trabalho2_Stack|pilha[6][2]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][10] ; |Trabalho2_Stack|pilha[7][10] ; regout           ;
+; |Trabalho2_Stack|pilha[7][9]  ; |Trabalho2_Stack|pilha[7][9]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][8]  ; |Trabalho2_Stack|pilha[7][8]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][7]  ; |Trabalho2_Stack|pilha[7][7]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][6]  ; |Trabalho2_Stack|pilha[7][6]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][5]  ; |Trabalho2_Stack|pilha[7][5]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][4]  ; |Trabalho2_Stack|pilha[7][4]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][3]  ; |Trabalho2_Stack|pilha[7][3]  ; regout           ;
+; |Trabalho2_Stack|pilha[7][2]  ; |Trabalho2_Stack|pilha[7][2]  ; regout           ;
++-------------------------------+-------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Oct 23 19:34:37 2026
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Trabalho2_Stack -c Trabalho2_Stack
+Info: Using vector source file "Z:/home/paulo/Downloads/trabalho/Trabalho2_Stack/Trabalho2_Stack.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of Trabalho2_Stack.vwf called Trabalho2_Stack.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      44.14 %
+Info: Number of transitions in simulation is 770
+Info: Vector file Trabalho2_Stack.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 87 megabytes
+    Info: Processing ended: Fri Oct 23 19:34:37 2026
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
