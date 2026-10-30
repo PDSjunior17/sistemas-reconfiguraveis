@@ -1,0 +1,57 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+ENTITY Contador_mod10 IS
+	PORT (
+		nrst : IN STD_LOGIC; -- reset assinc. ativo baixo
+		clk : IN STD_LOGIC; -- clock borda de subida
+		cnt_en : IN STD_LOGIC; -- habilita contagem
+		dir : IN STD_LOGIC; -- direção: 1 => crescente
+		q : OUT STD_LOGIC_VECTOR(3 DOWNTO 0); -- saída
+		tc: OUT STD_LOGIC -- contagem terminal
+	);
+END ENTITY;
+
+ARCHITECTURE arch1 OF Contador_mod10 IS
+
+	BEGIN
+	PROCESS(clk, nrst, cnt_en, dir)
+		VARIABLE cnt : INTEGER RANGE 0 TO 9;
+	BEGIN
+		IF nrst = '0' THEN
+			cnt := 0;
+		ELSIF RISING_EDGE(clk) THEN
+			IF cnt_en = '1' THEN
+				IF dir = '1' THEN
+					IF cnt = 9 THEN
+						cnt := 0;
+					ELSE
+						cnt := cnt + 1;
+					END IF;
+				ELSE
+					IF cnt = 0 THEN
+						cnt := 9;
+					ELSE
+						cnt:= cnt - 1;
+					END IF;
+				END IF;
+			END IF;
+		END IF;
+		IF  cnt_en = '1' THEN
+			IF dir = '1' THEN
+				IF cnt = 9 THEN
+					tc <= '1';
+				ELSE 
+					tc <= '0';
+				END IF;
+			ELSE
+				IF cnt = 0 THEN
+					tc <= '1';
+				ELSE
+					tc <= '0';
+				END IF;
+			END IF; 
+		END IF;
+		q <= STD_LOGIC_VECTOR(TO_UNSIGNED(cnt,4));
+	END PROCESS;
+END arch1;

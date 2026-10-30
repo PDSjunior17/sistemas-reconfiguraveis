@@ -1,0 +1,26 @@
+|Contador_mod10
+nrst => cnt[0].ACLR
+nrst => cnt[1].ACLR
+nrst => cnt[2].ACLR
+nrst => cnt[3].ACLR
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+cnt_en => tc$latch.LATCH_ENABLE
+cnt_en => cnt[0].ENA
+cnt_en => cnt[3].ENA
+cnt_en => cnt[2].ENA
+cnt_en => cnt[1].ENA
+dir => cnt.OUTPUTSELECT
+dir => cnt.OUTPUTSELECT
+dir => cnt.OUTPUTSELECT
+dir => cnt.OUTPUTSELECT
+dir => tc.OUTPUTSELECT
+q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+tc <= tc$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
